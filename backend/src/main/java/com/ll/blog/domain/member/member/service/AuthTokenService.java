@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Service
 public class AuthTokenService {
-    @Value("${custom.jwt.secretKey}")
+    @Value("${custom.jwt}")
     private String jwtSecretKey;
 
     @Value("${custom.accessToken.expirationSeconds}")
