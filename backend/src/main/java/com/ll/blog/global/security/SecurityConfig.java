@@ -30,6 +30,8 @@ public class SecurityConfig {
                                 .permitAll()
                                 .requestMatchers("/api/*/members/login", "/api/*/members/logout", "/api/*/members/join")
                                 .permitAll()
+                                .requestMatchers("/actuator/health")
+                                .permitAll()
                                 .requestMatchers("/api/*/**")
                                 .authenticated()
                                 .anyRequest()
